@@ -5,6 +5,7 @@ This repo is built upon [SMAC](), [DOP](https://github.com/TonghanWang/DOP) and 
 
 # To run experiments: 
 First install [SMAC](https://github.com/oxwhirl/smac), then
+
 for stochastic TAPE,
 ```shell
 cd stochastic  
@@ -14,4 +15,9 @@ for deterministic TAPE,
 ```shell
 cd deterministic  
 bash runalgo.sh
+```
+# To kill running processes:
+```shell
+pkill -u ($youruser) python
+pkill -u ($youruser) Main_Thread
 ```
