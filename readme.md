@@ -21,3 +21,25 @@ bash runalgo.sh
 pkill -u ($youruser) python
 pkill -u ($youruser) Main_Thread
 ```
+# To run with other graph models:
+You can use `networkx` package to generate graphs and use the adjcent matrix for the agent topology
+```python
+import networkx as nx
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Create a Watts-Strogatz small-world network
+n = 20
+k = 4 
+p = 0.1 
+G = nx.watts_strogatz_graph(n, k, p)
+
+# plot
+nx.draw(G, with_labels=True)
+plt.show()
+
+A = nx.adjacency_matrix(G)
+for i in range(n):
+    A[i,i]=1
+print(A.todense())
+```
