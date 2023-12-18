@@ -22,7 +22,7 @@ pkill -u ($youruser) python
 pkill -u ($youruser) Main_Thread
 ```
 # To run with other graph models:
-You can use `networkx` package to generate graphs and use the adjcent matrix for the agent topology
+You can use `networkx` package to generate graphs and use the adjcency matrix for the agent topology
 ```python
 import networkx as nx
 import matplotlib.pyplot as plt
