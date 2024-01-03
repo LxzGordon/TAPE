@@ -1,5 +1,5 @@
 # TAPE: Topology-based Multi-Agent Policy Gradient
-This is the code repository for AAAI 2024 paper "TAPE: Leveraging Agent Topology for Cooperative Multi-Agent Policy Gradient".
+This is the code repository for AAAI 2024 paper [TAPE: Leveraging Agent Topology for Cooperative Multi-Agent Policy Gradient](https://arxiv.org/abs/2312.15667).
 
 This repo is built upon [SMAC](), [DOP](https://github.com/TonghanWang/DOP) and [PAC](https://github.com/hanhanAnderson/PAC-MARL).
 
@@ -42,4 +42,14 @@ A = nx.adjacency_matrix(G)
 for i in range(n):
     A[i,i]=1
 print(A.todense())
+```
+# Citation
+Please cite
+```
+@article{lou2023tape,
+  title={TAPE: Leveraging Agent Topology for Cooperative Multi-Agent Policy Gradient},
+  author={Lou, Xingzhou and Zhang, Junge and Norman, Timothy J and Huang, Kaiqi and Du, Yali},
+  journal={arXiv preprint arXiv:2312.15667},
+  year={2023}
+}
 ```
